@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".fragments.TestRecyclerView">
+
+    <EditText
+        android:id="@+id/etvItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etvItemName"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@id/btnDecrease" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etvItemName"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:layout_margin="8dp"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/btnDecrease"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvAmount"
+        android:layout_alignTop="@+id/tvAmount"
+        android:layout_toStartOf="@+id/tvAmount"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnIncrease"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvAmount"
+        android:layout_alignTop="@+id/tvAmount"
+        android:layout_toEndOf="@+id/tvAmount"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnIncrease"
+        android:layout_alignBottom="@+id/btnIncrease"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/btnIncrease"
+        android:text="Add" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvAmount" />
+
+
+
+
+</RelativeLayout>

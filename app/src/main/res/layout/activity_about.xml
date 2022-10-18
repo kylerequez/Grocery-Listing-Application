@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".activities.AboutActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLabelA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:accessibilityHeading="true"
+            android:text="About"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="40sp"
+            android:paddingTop="105dp"/>
+
+        <Button
+            android:id="@+id/btnAboutThis"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1E3832"
+            android:text="About This Application" />
+
+        <Button
+            android:id="@+id/btnTargetUsers"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1E3832"
+            android:text="Target Users" />
+
+        <Button
+            android:id="@+id/btnVersion"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1E3832"
+            android:text="Version" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<resources>
+    <!-- Application Title -->
+    <string name="app_name">List my Groceries</string>
+
+    <!-- Spinner Value -->
+    <string-array name="description">
+        <item>Beverage</item>
+        <item>Bread</item>
+        <item>Dairy</item>
+        <item>Essentials</item>
+        <item>Fruit</item>
+        <item>Junk Food</item>
+        <item>Meat, Poultry, Fish</item>
+        <item>Medicine</item>
+        <item>Misc</item>
+        <item>Sweets</item>
+        <item>Vegetable</item>
+    </string-array>
+
+    <!-- Menu Texts String -->
+    <string name="List">List</string>
+    <string name="Calculator">Calculator</string>
+    <string name="Settings">Settings</string>
+
+    <!-- About Page String -->
+    <string name="about_application">List my Groceries is a simple mobile productivity application that lets the user list things to be bought during their grocery shopping.\n\nThe application features the following: a splash screen that showcases the logo and redirects the user to the main application interface, a navigation bar that lets the user move around the application, a settings menu that includes the theme changer and the about page of the application, and the main application interface which lets the user insert an item and its quantity inside the list and display it, allowing the user to swipe to delete the item in the list.\n\nIt stays true with the simplistic design and functionality that our group wanted to implement in this project. It fully utilizes the SQLite Database in Android for storing information per item. In addition, it also uses the Saved Preferences technology to store the various data such as the themes of the application.</string>
+
+    <!-- List Entries -->
+    <string-array name="list_entries">
+        <item>Beverage</item>
+        <item>Bread</item>
+        <item>Dairy</item>
+        <item>Essentials</item>
+        <item>Fruit</item>
+        <item>Meat, Poultry, Fish</item>
+        <item>Misc</item>
+        <item>Vegetable</item>
+    </string-array>
+
+    <!-- List Values -->
+    <string-array name="list_values">
+        <item>Beverage</item>
+        <item>Bread</item>
+        <item>Dairy</item>
+        <item>Essentials</item>
+        <item>Fruit</item>
+        <item>Meat, Poultry, Fish</item>
+        <item>Misc</item>
+        <item>Vegetable</item>
+    </string-array>
+
+    <!-- Settings Menu String -->
+    <!-- General -->
+    <string name="settings_general">General</string>
+    <string name="general_firstname">First Name</string>
+    <string name="general_firstname_summary">Please enter your first name</string>
+    <string name="general_firstname_key">prefFirstname</string>
+    <string name="general_surname">Surname</string>
+    <string name="general_surname_summary">Please enter your surname</string>
+    <string name="general_surname_key">prefSurname</string>
+
+    <!-- Theme -->
+    <string name="settings_theme">Theme</string>
+    <string name="theme_theme">Theme</string>
+    <string name="theme_theme_summary">Please select a theme</string>
+    <string name="theme_theme_key">prefTheme</string>
+    <string name="theme_theme_dialogTitle">Theme</string>
+    <string name="theme_theme_defaultValue">LIGHT</string>
+    <string-array name="pref_theme_entries">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="pref_theme_values">
+        <item>LIGHT</item>
+        <item>DARK</item>
+    </string-array>
+
+    <!-- About -->
+    <string name="settings_about">About</string>
+    <string name="about_about">About</string>
+    <string name="about_about_summary">View the about page of the application</string>
+
+    <string name="about_developers">Developers</string>
+    <string name="about_developers_summary">View the dev team</string>
+</resources>

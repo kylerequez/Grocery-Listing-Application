@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GroceryListApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_black</item>
+        <item name="colorPrimaryVariant">@color/dark_grey</item>
+        <item name="colorOnPrimary">@color/light_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_orange</item>
+        <item name="colorSecondaryVariant">@color/light_orange</item>
+        <item name="colorOnSecondary">@color/light_white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <!-- For background -->
+        <item name="colorPrimarySurface">@color/dark_lightblack</item>
+        <!-- For numeric keys -->
+        <item name="colorOnPrimarySurface">@color/dark_lightblack</item>
+    </style>
+</resources>

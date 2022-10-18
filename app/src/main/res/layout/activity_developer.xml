@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/bg"
+    tools:context=".activities.DeveloperActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MEET THE\nTEAM"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:textColor="?attr/colorOnSecondary"/>
+
+            <ImageView
+                android:id="@+id/imvJohnLopez"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/tvTeam"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/john" />
+            <TextView
+                android:id="@+id/tvJohnLopez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/imvJohnLopez"
+                android:text="John Lopez"
+                android:textSize="20dp"
+                android:textColor="?attr/colorOnSecondary"/>
+            <ImageView
+                android:id="@+id/imvKyleRequez"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/tvJohnLopez"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/kyle" />
+            <TextView
+                android:id="@+id/tvKyleRequez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/imvKyleRequez"
+                android:text="Kyle Requez"
+                android:textSize="20dp"
+                android:textColor="?attr/colorOnSecondary"/>
+            <ImageView
+                android:id="@+id/imvSimonUllado"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/tvKyleRequez"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/simon" />
+            <TextView
+                android:id="@+id/tvSimonUllado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/imvSimonUllado"
+                android:text="Simon Ullado"
+                android:textSize="20dp"
+                android:textColor="?attr/colorOnSecondary"/>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

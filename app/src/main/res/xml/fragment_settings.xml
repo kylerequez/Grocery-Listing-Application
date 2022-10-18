@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:colorBackground="?attr/colorPrimarySurface">
+
+    <PreferenceCategory android:title="@string/settings_general">
+        <EditTextPreference android:title="@string/general_firstname"
+            android:summary="@string/general_firstname_summary"
+            android:key="@string/general_firstname_key"/>
+
+        <EditTextPreference android:title="@string/general_surname"
+            android:summary="@string/general_surname_summary"
+            android:key="@string/general_surname_key"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_theme">
+        <ListPreference android:title="@string/theme_theme"
+            android:defaultValue="@string/theme_theme_defaultValue"
+            android:dialogTitle="@string/theme_theme_dialogTitle"
+            android:entries="@array/pref_theme_entries"
+            android:entryValues="@array/pref_theme_values"
+            android:summary="@string/theme_theme_summary"
+            android:key="@string/theme_theme_key"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_about">
+        <Preference android:title="@string/about_about"
+            android:summary="@string/about_about_summary">
+            <intent
+                android:action=".activities.AboutActivity" />
+        </Preference>
+
+        <Preference android:title="@string/about_developers"
+            android:summary="@string/about_developers_summary">
+            <intent
+                android:action=".activities.DeveloperActivity" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

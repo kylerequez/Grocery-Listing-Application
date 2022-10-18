@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_list"
+        android:icon="@drawable/ic_baseline_list_24"
+        android:title="@string/List"/>
+
+    <item
+        android:id="@+id/nav_calculator"
+        android:icon="@drawable/ic_baseline_calculate_24"
+        android:title="@string/Calculator"/>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/Settings"/>
+</menu>
